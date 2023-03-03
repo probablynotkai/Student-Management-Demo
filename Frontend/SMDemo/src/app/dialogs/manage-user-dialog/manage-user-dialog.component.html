@@ -1,0 +1,36 @@
+<div class="p-3">
+    <div>
+        <h2>{{ data.studentName }} - #{{ data.studentId }}</h2>
+    </div>
+
+    <div class="px-3">
+        <div class="my-1">
+            <h5>Student Details</h5>
+            <mat-form-field class="w-100">
+                <mat-label>Student Name</mat-label>
+                <input matInput required [(ngModel)]="studentName" name="studentName">
+            </mat-form-field>
+            <mat-form-field class="w-100">
+                <mat-label>Class Code</mat-label>
+                <input matInput required [(ngModel)]="classCode" name="classCode">
+            </mat-form-field>
+        </div>
+        <div class="my-1">
+            <h5>Parent/Guardian Details</h5>
+            <mat-form-field class="w-100">
+                <mat-label>Carer Name</mat-label>
+                <input matInput required [(ngModel)]="carerName" name="carerName">
+            </mat-form-field>
+            <mat-form-field class="w-100">
+                <mat-label>Carer Email</mat-label>
+                <input matInput required [(ngModel)]="carerEmail" name="carerEmail">
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div class="d-flex" style="gap: 1rem;">
+        <button mat-raised-button color="primary" (click)="confirmChanges()">Save Changes</button>
+        <button mat-raised-button color="warn" (click)="deleteRecord()">Delete Record</button>
+        <button mat-stroked-button color="warn" mat-dialog-close>Cancel</button>
+    </div>
+</div>

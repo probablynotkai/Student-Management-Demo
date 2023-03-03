@@ -1,0 +1,14 @@
+<div class="container pt-5">
+  <div class="container text-center navig">
+    <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+      <a mat-tab-link [active]="isLinkActive('home')" routerLink="">Manage Students</a>
+      <a mat-tab-link [active]="isLinkActive('enrol')" routerLink="enrol">Enrol Student</a>
+    </nav>
+    
+    <mat-tab-nav-panel #tabPanel>
+      <div class="py-4">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-tab-nav-panel>
+  </div>
+</div>

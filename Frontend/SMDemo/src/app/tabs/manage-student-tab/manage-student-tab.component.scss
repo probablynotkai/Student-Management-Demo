@@ -1,0 +1,19 @@
+.studentCard {
+    padding-top: 14px;
+    padding-right: 8px;
+    background-color: #F6F9FF;
+    border: none;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: filter 0.2s;
+}
+
+.studentCard:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+div.studentCard div {
+    min-width: 200px;
+    max-width: 200px;
+}

@@ -1,0 +1,28 @@
+<div class="container text-left">
+    <h2>Student Enrolment</h2>
+    <p>
+        Use this form to enrol students, after creation, you will receive their student ID, please take note of this for the student to ensure that no confusion occurs upon the commencing school year.
+    </p>
+
+    <mat-form-field class="w-100">
+        <mat-label>Student Full Name</mat-label>
+        <input matInput [(ngModel)]="name" required name="studentName">
+    </mat-form-field>
+
+    <mat-form-field class="w-100">
+        <mat-label>Student Class Code</mat-label>
+        <input matInput [(ngModel)]="classCode" required name="classCode">
+    </mat-form-field>
+
+    <mat-form-field class="w-100">
+        <mat-label>Parent/Guardian Full Name</mat-label>
+        <input matInput [(ngModel)]="carerName" required name="carerName">
+    </mat-form-field>
+
+    <mat-form-field class="w-100">
+        <mat-label>Parent/Guardian Email Address</mat-label>
+        <input matInput [(ngModel)]="carerEmail" required name="carerEmail">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="enrolStudent()">Enrol Student</button>
+</div>
